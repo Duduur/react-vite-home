@@ -1,0 +1,161 @@
+.recuperar-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #708EF1 0%, #537BC4 100%);
+  padding: 20px;
+}
+
+.recuperar-content {
+  width: 100%;
+  max-width: 500px;
+}
+
+.recuperar-card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 60px 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.recuperar-title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.recuperar-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.recuperar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input-group-recuperar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #E0E0E0;
+  border-radius: 30px;
+  padding: 15px 25px;
+  transition: all 0.3s;
+}
+
+.input-group-recuperar:focus-within {
+  border-color: #708EF1;
+  box-shadow: 0 0 0 3px rgba(112, 142, 241, 0.1);
+}
+
+.input-icon-recuperar {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #708EF1;
+}
+
+.input-icon-img-recuperar {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.recuperar-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Krona One', sans-serif;
+  color: #000000;
+  background: transparent;
+}
+
+.recuperar-input::placeholder {
+  color: #CCCCCC;
+  font-size: 12px;
+}
+
+.recuperar-btn {
+  width: 100%;
+  padding: 18px;
+  background-color: #708EF1;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(112, 142, 241, 0.3);
+}
+
+.recuperar-btn:hover {
+  background-color: #537BC4;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(112, 142, 241, 0.4);
+}
+
+.recuperar-btn:active {
+  transform: translateY(0);
+}
+
+.back-to-login-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  color: #708EF1;
+  border: 2px solid #708EF1;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-to-login-btn:hover {
+  background-color: #708EF1;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.back-to-login-btn:active {
+  transform: translateY(0);
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recuperar-card {
+    padding: 40px 30px;
+  }
+
+  .recuperar-title {
+    font-size: 28px;
+  }
+
+  .recuperar-subtitle {
+    font-size: 12px;
+  }
+}
